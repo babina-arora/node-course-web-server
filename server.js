@@ -48,8 +48,13 @@ app.get('/', (request,response) => {
 
 app.get('/about', (request,response) => {
     response.render('about.hbs',{
-        pageTitle:'About Page',
-        currentYear: new Date().getFullYear()
+        pageTitle:'About Page'
+    });
+});
+
+app.get('/projects', (request,response) => {
+    response.render('projects.hbs',{
+        pageTitle:'Projects'
     });
 });
 
